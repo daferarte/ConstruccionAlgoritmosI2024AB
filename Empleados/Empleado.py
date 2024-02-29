@@ -56,4 +56,15 @@ class Empleado:
         #Forma2
         # return self.salario*12
     
+    def ConsultarDiaCumpleanios(self):
+        return self.fechaNacimiento.ConsultarDia()
     
+    def CalcularImpuesto(self):
+        #Forma 1
+        # total = self.CalcularSalarioAnual()
+        # total = total * (19.5/100)
+        # return total
+
+        #Forma 2
+        
+        return self.CalcularSalarioAnual()*0.195
